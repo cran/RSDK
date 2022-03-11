@@ -1,5 +1,4 @@
 library(shiny)
-devtools::load_all("D:/2021-2022/S2/PROG R/Project/RSDK/")
 
 shinyServer(function(input, output) {
   A <- NULL

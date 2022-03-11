@@ -1,4 +1,4 @@
-26f2a6147c4cbaad0edea7fc99a27146 *DESCRIPTION
+a3f1aadcf81a3190f937de6c9f6d89fb *DESCRIPTION
 4c741c7ebc1018b7cb2ce221c7986539 *LICENSE
 6e33cd1d83cb91c103f2a661515a86dd *NAMESPACE
 200f3d1c193ed16e4e0d4c84e8fb696b *R/atbox.R
@@ -19,9 +19,9 @@ bddf81cd1602ae10621525f9633efd10 *R/nbrposs.R
 ba8c3928492f16affa943c5e246389cb *R/poss.R
 aae960bd95dd791501191e1380dffe06 *R/runSudoku.R
 2e62c556de541650c7efe8e82e1ff472 *R/solver.R
-b22aea0b4c568c680e8d78724ce8d0e8 *README.md
-7766109c5733b39d0aee920bf7c29c6c *inst/shiny/RSDK/server.R
-2a59d5bff0ea4ab6d5e17420add1c854 *inst/shiny/RSDK/ui.R
+e66a60ceaef0774922b913884c76401b *README.md
+7377b8f315ef00d3e92e54643ea00f27 *inst/shiny/RSDK/server.R
+1f161ba64531e7116b7e6c6a2e03de85 *inst/shiny/RSDK/ui.R
 e46891345ce7b3e9117da8b9cb7ec2da *inst/shiny/RSDK/www/mth.css
 6e377264ceddf123254076ff202a100a *man/atbox.Rd
 296ff0c85fc8829e600619f6f4fe2a45 *man/atcol.Rd

@@ -1,11 +1,8 @@
 [![ELKHMISSI - RSDK](https://img.shields.io/static/v1?label=ELKHMISSI&message=RSDK&color=success&logo=github)](https://github.com/ELKHMISSI/RSDK "Go to GitHub repo")
 [![License](https://img.shields.io/badge/License-MIT-success)](#license)
 
-## License
-
-Released under [MIT](/LICENSE) by [@ELKHMISSI](https://github.com/ELKHMISSI).
-
 ---
+
 ## Author
 
 + EL KHMISSI Mohamed <mohamed.el-khmissi01@etu.umontpellier.fr>
@@ -15,19 +12,20 @@ Released under [MIT](/LICENSE) by [@ELKHMISSI](https://github.com/ELKHMISSI).
 ## RSDK
 
 RSDK or R SuDoKu is an R package developed for the project of R programming in the master 1 SSD (Statistiques et sciences des donnés),faculty of science Montpellier.  
-The package contains a shiny application that we can play sudoku on it .
+The package contains a shiny application that we can play sudoku on it.
 
----
-
-### What is backtracking algorithm?
-
-<https://en.wikipedia.org/wiki/Backtracking>
+For a full documentation : <https://CRAN.R-project.org/package=RSDK>
 
 ---
 
 ### Install RSDK
 
-The installation of the package is directly from `github`, so:
+You can install the package from the `CRAN` by runing directly in your console:
+
+```
+install.packages("RSDK")
+```
+Or use the installation of the package from `github`, so:
 
 + First, you need to install the `devtools` package. You can run in the console the following command
 ```
@@ -77,6 +75,32 @@ the box), and if it has been turns green it means that the value on it not in th
 
 + Enjoy!
 
+---
+
+### How difficulties levels are defined in the game ?
+
+#### What is backtracking algorithm?
+
+<https://en.wikipedia.org/wiki/Backtracking>
+
+The function `bt_solver()` in the package use the algorithm of backtracking to solve the incomplete sudoku grid, and it returns a list of two element the first one contains the solved grid, and the second one contains the number of the backtracking, that the function did to solve the grid.
+So the difficulty of each grid is associated to the number of backtracking that the function `bt_solver` did on the resolution of the grid.
+For optimization issues we've we have choose the median of an array of the number of backtracking for 100 incomplete grids of the number of gaps, for example we've choose 45 gaps for the "Easy" level,48 gaps for the "Difficult" level, 51 gaps for the "Hard" level and "54" gaps for the "Legend" level.
+And the difficulties are as follow:
+
++ "Easy" level:`#Backtracking` < 75
+
++ "Difficult" level: 76 <`#Backtracking` < 260
+
++ "Hard" level: 261 <`#Backtracking` < 600
+
++ "Legend" level: 600 <`#Backtracking`
+
+---
+
+### License
+
+Released under [MIT](/LICENSE) by [@ELKHMISSI](https://github.com/ELKHMISSI).
 
 
 
